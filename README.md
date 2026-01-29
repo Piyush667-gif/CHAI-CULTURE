@@ -18,4 +18,10 @@ This website is designed to give users a **premium chai-brand feel**, combining 
 > Add GIF or Screenshot here for best impact 👇
 
 ```html
-<img src="./preview.gif" alt="Chai Culture Website Preview" width="100%">
+## ☕ Chai Culture Experience
+
+<p align="center">
+  <img src="./tea.gif" alt="Chai Culture Tea Animation" width="600">
+</p>
+
+> A visual experience inspired by the royal tradition of Indian chai.
