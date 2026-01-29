@@ -19,6 +19,12 @@ This website is designed to give users a **premium chai-brand feel**, combining 
 
 ```html
 ## ☕ Chai Culture Experience
-https://media.giphy.com/media/aZdCfWI98ZBttDJHj8/giphy.gif
+## ☕ Chai Culture Animation
+
+
+"https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydG02cXAzOHVzaTJhcmxnc2MwOTAxeXY0MGRicGtxdzh6NmxnMXg4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aZdCfWI98ZBttDJHj8/giphy.gif" 
+      
+
+> ☕ Enjoy the warm, animated visual of chai — perfect for a premium tea brand experience!
 
 > ☕ Enjoy the warm, animated visual of chai — perfect for a premium tea brand experience!">
