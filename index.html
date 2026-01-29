@@ -1,85 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai Culture | Brew the Royal Tradition</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide-react"></script>
-</head>
-<body>
-    <div class="overlay-texture"></div>
-
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" y1="2" x2="6" y2="4"></line><line x1="10" y1="2" x2="10" y2="4"></line><line x1="14" y1="2" x2="14" y2="4"></line></svg>
-                <span class="brand-name">Chai Culture</span>
-            </div>
-            <div id="auth-status" class="auth-status">
-                <!-- Dynamic content from JS -->
-            </div>
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai Culture - Brew the Royal Tradition</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+     
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Lato:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  
+  <style>@view-transition { navigation: auto; }</style>
+       <link rel="stylesheet" href="styles.css">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div class="app-wrapper"><!-- Background Pattern -->
+   <div class="bg-pattern"></div><!-- Decorative Tea Leaves -->
+   <svg class="decorative-leaf leaf-1" viewbox="0 0 100 100" fill="#3D2314"><path d="M50 5 C20 20, 10 50, 50 95 C90 50, 80 20, 50 5 Z M50 20 C35 35, 30 55, 50 80 C70 55, 65 35, 50 20 Z" />
+   </svg>
+   <svg class="decorative-leaf leaf-2" viewbox="0 0 100 100" fill="#3D2314"><path d="M50 5 C20 20, 10 50, 50 95 C90 50, 80 20, 50 5 Z M50 20 C35 35, 30 55, 50 80 C70 55, 65 35, 50 20 Z" />
+   </svg><!-- Header -->
+   <header class="header">
+    <div class="header-content">
+     <div class="logo-container"><!-- Animated Logo SVG -->
+      <div class="logo-wrapper">
+       <svg class="logo-svg" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><!-- Outer Decorative Ring --> <circle class="logo-ring" cx="50" cy="50" r="45" fill="none" stroke="#D4A853" stroke-width="2" stroke-dasharray="10 5" /> <!-- Tea Cup Base --> <ellipse cx="50" cy="75" rx="25" ry="8" fill="#3D2314" /> <!-- Tea Cup Body --> <path d="M25 45 Q25 75, 50 75 Q75 75, 75 45 L75 40 Q75 35, 70 35 L30 35 Q25 35, 25 40 Z" fill="#D4A853" /> <!-- Cup Inner --> <ellipse cx="50" cy="40" rx="20" ry="6" fill="#B8923F" /> <!-- Tea Liquid --> <ellipse cx="50" cy="42" rx="17" ry="4" fill="#5D4037" /> <!-- Cup Handle --> <path d="M75 42 Q90 42, 90 55 Q90 68, 75 68" fill="none" stroke="#D4A853" stroke-width="5" stroke-linecap="round" /> <!-- Steam Lines --> <path class="steam-path" d="M40 30 Q38 22, 42 15" fill="none" stroke="#D4A853" stroke-width="2" stroke-linecap="round" /> <path class="steam-path" d="M50 28 Q48 18, 52 10" fill="none" stroke="#D4A853" stroke-width="2" stroke-linecap="round" /> <path class="steam-path" d="M60 30 Q58 22, 62 15" fill="none" stroke="#D4A853" stroke-width="2" stroke-linecap="round" /> <!-- Decorative Dots --> <circle cx="35" cy="55" r="2" fill="#3D2314" opacity="0.5" /> <circle cx="50" cy="58" r="2" fill="#3D2314" opacity="0.5" /> <circle cx="65" cy="55" r="2" fill="#3D2314" opacity="0.5" />
+       </svg>
+      </div>
+      <div class="brand-name" id="header-brand-name">
+       Chai <span>Culture</span>
+      </div>
+     </div>
+     <div class="user-status">
+      <div class="user-info" id="user-info">
+       <div class="user-avatar" id="user-avatar">
+        C
+       </div><span class="user-email" id="user-email-display"></span> <button class="signout-btn" id="signout-btn">Sign Out</button>
+      </div>
+     </div>
+    </div>
+   </header><!-- Main Content -->
+   <main class="main-content">
+    <section class="hero">
+     <div class="hero-content"><!-- Launch Badge -->
+      <div class="launch-badge" id="launch-badge"><span class="badge-dot"></span> <span id="badge-text">Launching Soon</span>
+      </div><!-- Hero Logo -->
+      <div class="hero-logo">
+       <svg class="logo-svg" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle class="logo-ring" cx="50" cy="50" r="45" fill="none" stroke="#D4A853" stroke-width="1.5" stroke-dasharray="8 4" /> <ellipse cx="50" cy="75" rx="25" ry="8" fill="#3D2314" /> <path d="M25 45 Q25 75, 50 75 Q75 75, 75 45 L75 40 Q75 35, 70 35 L30 35 Q25 35, 25 40 Z" fill="#D4A853" /> <ellipse cx="50" cy="40" rx="20" ry="6" fill="#B8923F" /> <ellipse cx="50" cy="42" rx="17" ry="4" fill="#5D4037" /> <path d="M75 42 Q90 42, 90 55 Q90 68, 75 68" fill="none" stroke="#D4A853" stroke-width="5" stroke-linecap="round" /> <path class="steam-path" d="M40 30 Q38 22, 42 15" fill="none" stroke="#D4A853" stroke-width="2" stroke-linecap="round" /> <path class="steam-path" d="M50 28 Q48 18, 52 10" fill="none" stroke="#D4A853" stroke-width="2" stroke-linecap="round" /> <path class="steam-path" d="M60 30 Q58 22, 62 15" fill="none" stroke="#D4A853" stroke-width="2" stroke-linecap="round" /> <circle cx="35" cy="55" r="2" fill="#3D2314" opacity="0.5" /> <circle cx="50" cy="58" r="2" fill="#3D2314" opacity="0.5" /> <circle cx="65" cy="55" r="2" fill="#3D2314" opacity="0.5" />
+       </svg>
+      </div><!-- Tagline -->
+      <h1 class="tagline" id="tagline">Brew the <span class="highlight">Royal</span> Tradition</h1><!-- Description -->
+      <p class="hero-description" id="hero-description">Experience the authentic taste of premium Indian chai, crafted from recipes passed down through generations of royal households. Our instant chai premix brings the warmth and elegance of traditional chai to your cup.</p><!-- Signup Section -->
+      <div class="signup-section"><!-- Form (shown when not signed in) -->
+       <form class="signup-form" id="signup-form">
+        <div class="form-group"><input type="email" class="form-input" id="email-input" placeholder="Enter your email for exclusive early access" aria-label="Email address" required>
+         <p class="error-message" id="error-message"></p>
+        </div><button type="submit" class="submit-btn" id="submit-btn"> ✨ Get Early Access </button>
+       </form><!-- Success Message (shown after signup) -->
+       <div class="success-message" id="success-message">
+        <div class="success-icon">
+         <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
         </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="badge fade-in">Coming Soon to Your Cup</div>
-                    <h1 class="fade-in-delayed">Brew the <span class="accent">Royal Tradition</span></h1>
-                    <p class="description fade-in-delayed-more">Experience the essence of Indian heritage with our premium instant chai premix. Crafted from secret royal recipes, curated for the modern connoisseur.</p>
-                    
-                    <div id="signup-container" class="signup-container fade-in-delayed-more">
-                        <form id="signup-form" class="signup-form">
-                            <div class="input-group">
-                                <input type="email" id="email" placeholder="Enter your royal invite email" required>
-                                <button type="submit" class="btn-primary">Get Early Access</button>
-                            </div>
-                            <p class="form-hint">Join 2,000+ tea lovers awaiting the launch.</p>
-                        </form>
-                    </div>
-
-                    <div id="success-container" class="success-container hidden">
-                        <div class="success-card">
-                            <i data-lucide="check-circle" class="success-icon"></i>
-                            <h3>You're on the list!</h3>
-                            <p>We'll notify you the moment the first batch is ready.</p>
-                            <button id="signout-btn" class="btn-secondary">Not you? Sign Out</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1544787210-2213d84ad96b?w=1200&h=1600&fit=crop&q=80" alt="Premium Indian Chai" class="hero-img">
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <p>&copy; 2024 Chai Culture. All rights reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
-</body>
+        <h3 class="success-title">Welcome to the Royal Circle!</h3>
+        <p class="success-text">You're now on our exclusive early access list. We'll notify you when we launch.</p>
+       </div>
+      </div><!-- Social Links -->
+      <div class="social-section">
+       <p class="social-title">Follow Our Journey</p>
+       <div class="social-links"><!-- Instagram --> <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+         <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /> <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /> <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+         </svg></a> <!-- Twitter/X --> <a href="#" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+         <svg viewbox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+         </svg></a> <!-- LinkedIn --> <a href="#" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+         <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /> <rect x="2" y="9" width="4" height="12" /> <circle cx="4" cy="4" r="2" />
+         </svg></a>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main><!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+     <div class="footer-logo">
+      <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><ellipse cx="50" cy="75" rx="25" ry="8" fill="#3D2314" opacity="0.3" /> <path d="M25 45 Q25 75, 50 75 Q75 75, 75 45 L75 40 Q75 35, 70 35 L30 35 Q25 35, 25 40 Z" fill="#D4A853" opacity="0.5" />
+      </svg>
+     </div>
+     <p class="footer-text" id="footer-text">© 2024 Chai Culture. All rights reserved. | Crafted with ☕ and ❤️ in India</p>
+    </div>
+   </footer>
+  </div>
+   <script src="script.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5a896b524548f8',t:'MTc2OTcwODY1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
