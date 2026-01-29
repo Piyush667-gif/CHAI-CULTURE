@@ -33,5 +33,4 @@
 
 ---
 
-## 📂 Project Structure
-CHAI-CULTURE/ ├── index.html       # Main landing page ├── styles.css       # CSS styles & animations ├── script.js        # Signup form logic ├── logo.jpeg        # Brand logo ├── tea.gif          # Optional: Local animated tea GIF            
+       
