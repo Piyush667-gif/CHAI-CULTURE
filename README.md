@@ -1,30 +1,37 @@
-
 # ☕ CHAI CULTURE  
-### *Brew the Royal Tradition*
+### Brew the Royal Tradition
 
-✨ A **premium, animated, responsive website** inspired by the royal heritage of Indian chai.  
-This project showcases a **luxury brand launch website** built using **HTML, CSS, and JavaScript**, with smooth animations and modern UI.
+<p align="center">
+  <img src="https://media.giphy.com/media/aZdCfWI98ZBttDJHj8/giphy.gif" 
+       alt="Chai Tea Animation" 
+       width="600">
+</p>
 
----
-
-## 🌟 Live Experience
-> Royal colors • Smooth animations • Elegant UI • Mobile friendly
-
-This website is designed to give users a **premium chai-brand feel**, combining tradition with modern web design.
+> Experience the elegance and warmth of premium Indian chai with a fully animated, responsive landing page.  
 
 ---
 
-## 🎥 Preview (Animation Highlight)
-> Add GIF or Screenshot here for best impact 👇
+## 🌟 Features
 
-```html
-## ☕ Chai Culture Experience
-## ☕ Chai Culture Animation
+- ✨ **Animated Hero Section** with tagline  
+- 🎨 **Royal Color Palette:** Brown, Gold, Cream  
+- 📧 **Email Signup Form:** Sign Up / Sign Out logic using JavaScript  
+- 🌐 **Social Media Integration:** Email, Instagram, Facebook, LinkedIn  
+- 📱 **Responsive Design:** Mobile, Tablet & Desktop ready  
+- ⚡ **Smooth CSS Animations:** Buttons, hover effects, social icons  
+- 🖋️ **Premium Typography:** Playfair Display + Poppins  
 
+---
 
-"https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydG02cXAzOHVzaTJhcmxnc2MwOTAxeXY0MGRicGtxdzh6NmxnMXg4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aZdCfWI98ZBttDJHj8/giphy.gif" 
-      
+## 🛠 Built With
 
-> ☕ Enjoy the warm, animated visual of chai — perfect for a premium tea brand experience!
+| Technology | Purpose |
+|------------|---------|
+| HTML5      | Structure & content |
+| CSS3       | Styling & animations |
+| JavaScript | Form logic & interactivity |
+| SVG / Images | Logo & icons |
 
-> ☕ Enjoy the warm, animated visual of chai — perfect for a premium tea brand experience!">
+---
+
+## 📂 Project Structure
