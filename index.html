@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Culture | Brew the Royal Tradition</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide-react"></script>
+</head>
+<body>
+    <div class="overlay-texture"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" y1="2" x2="6" y2="4"></line><line x1="10" y1="2" x2="10" y2="4"></line><line x1="14" y1="2" x2="14" y2="4"></line></svg>
+                <span class="brand-name">Chai Culture</span>
+            </div>
+            <div id="auth-status" class="auth-status">
+                <!-- Dynamic content from JS -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge fade-in">Coming Soon to Your Cup</div>
+                    <h1 class="fade-in-delayed">Brew the <span class="accent">Royal Tradition</span></h1>
+                    <p class="description fade-in-delayed-more">Experience the essence of Indian heritage with our premium instant chai premix. Crafted from secret royal recipes, curated for the modern connoisseur.</p>
+                    
+                    <div id="signup-container" class="signup-container fade-in-delayed-more">
+                        <form id="signup-form" class="signup-form">
+                            <div class="input-group">
+                                <input type="email" id="email" placeholder="Enter your royal invite email" required>
+                                <button type="submit" class="btn-primary">Get Early Access</button>
+                            </div>
+                            <p class="form-hint">Join 2,000+ tea lovers awaiting the launch.</p>
+                        </form>
+                    </div>
+
+                    <div id="success-container" class="success-container hidden">
+                        <div class="success-card">
+                            <i data-lucide="check-circle" class="success-icon"></i>
+                            <h3>You're on the list!</h3>
+                            <p>We'll notify you the moment the first batch is ready.</p>
+                            <button id="signout-btn" class="btn-secondary">Not you? Sign Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1544787210-2213d84ad96b?w=1200&h=1600&fit=crop&q=80" alt="Premium Indian Chai" class="hero-img">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <p>&copy; 2024 Chai Culture. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

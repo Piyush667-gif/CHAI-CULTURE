@@ -1,0 +1,332 @@
+:root {
+    --gold: #D4AF37;
+    --gold-dark: #B8860B;
+    --brown-deep: #2D1B14;
+    --brown-light: #3E2723;
+    --cream: #FFF9E3;
+    --beige: #F5F5DC;
+    --text-main: #2D1B14;
+    --text-muted: #6D5D56;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .brand-name {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Background Texture */
+.overlay-texture {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Header */
+.header {
+    padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--brown-deep);
+}
+
+.logo-icon {
+    color: var(--gold-dark);
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.auth-status {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 5rem;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 2rem;
+    position: relative;
+    z-index: 20;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: var(--gold);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--brown-deep);
+}
+
+h1 .accent {
+    color: var(--gold-dark);
+    font-style: italic;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+/* Hero Image */
+.hero-image-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(20%) contrast(1.1);
+}
+
+.hero-image-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--cream), transparent 40%);
+}
+
+/* Signup Form */
+.signup-form {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+input[type="email"] {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fcfcfc;
+    outline: none;
+}
+
+.btn-primary {
+    background: var(--brown-deep);
+    color: var(--cream);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-primary:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(184, 134, 11, 0.2);
+}
+
+.form-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    padding: 0 1rem 0.5rem;
+}
+
+/* Success Card */
+.success-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--gold);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    color: #10B981;
+    margin-bottom: 1.5rem;
+}
+
+.success-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.success-card p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--brown-deep);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: var(--brown-deep);
+    color: white;
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 0;
+    background: var(--brown-deep);
+    color: var(--beige);
+    position: relative;
+    z-index: 20;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: var(--gold);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in { animation: fadeInUp 0.8s ease-out forwards; }
+.fade-in-delayed { animation: fadeInUp 0.8s ease-out 0.2s forwards; opacity: 0; }
+.fade-in-delayed-more { animation: fadeInUp 0.8s ease-out 0.4s forwards; opacity: 0; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 8rem;
+    }
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .hero-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .hero-image-wrapper::after {
+        background: linear-gradient(to bottom, var(--cream), transparent 40%);
+    }
+    h1 { font-size: 3rem; }
+    .description { margin: 0 auto 2.5rem; }
+    .signup-form { max-width: 500px; margin: 0 auto; }
+}
+
+@media (max-width: 600px) {
+    .input-group { flex-direction: column; }
+    h1 { font-size: 2.5rem; }
+    .footer-grid { flex-direction: column; gap: 2rem; text-align: center; }
+}
